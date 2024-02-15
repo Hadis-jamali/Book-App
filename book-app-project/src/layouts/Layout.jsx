@@ -1,9 +1,14 @@
+import styles from "./Layout.module.css";
 function Layout({ children }) {
   return (
     <>
-      <header>header</header>
+      <header className={styles.header}>
+        <h1>Book App</h1>
+      </header>
       {children}
-      <footer>footer</footer>
+      <footer className={styles.footer}>
+        <p>Developed with ❤️ by Hadis</p>
+      </footer>
     </>
   );
 }
